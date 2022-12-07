@@ -9,7 +9,7 @@ const { PostsModel } = require('../models/postsModel');
 router.get('/', (req, res) => {
   PostsModel.find((err, docs) => {
     if (!err) res.send(docs);
-    else console.log("rreur lors de la récupération des données : " + err);
+    else console.log("Erreur lors de la récupération des données : " + err);
   })
 });
 
